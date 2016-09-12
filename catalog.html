@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог товаров</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="visual-hidden">Мишка</h1>
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo.svg" width="86" height="35" alt="Мишка">
+      </a>
+      <nav class="page-nav  page-nav--closed">
+        <button class="page-nav__toogle" type="button"></button>
+        <ul class="page-nav__list">
+          <li class="page-nav__item  page-nav__item--active"><a>Каталог товаров</a></li>
+          <li class="page-nav__item"><a href="form-html">Вязание на заказ</a></li>
+          <li class="page-nav__item"><a href="#">Поиск по сайту</a></li>
+          <li class="page-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="page-title">
+      <h1>каталог товаров</h1>
+    </div>
+    <section class="catalog">
+      <article class="catalog-item">
+        <img src="rabbit.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+        <h1 class="catalog-item__title">Зайчик-попрыгайчик</h1>
+        <p class="catalog-item__description">
+          Рост 30 см, вес 200 г
+        </p>
+        <div class="catalog-item__price">
+          1200 руб.
+        </div>
+        <a class="catalog-item__btn" href="#">В корзину</a>
+      </article>
+      <article class="catalog-item">
+        <img src="flasket.jpg" width="260" height="195" alt="Корзинка для белья">
+        <h1 class="catalog-item__title">Корзинка для белья</h1>
+        <p class="catalog-item__description">
+          Диаметр 15 см, высота 10 см
+        </p>
+        <div class="catalog-item__price">
+          690 руб.
+        </div>
+        <a class="catalog-item__btn" href="#">В корзину</a>
+      </article>
+      <article class="catalog-item">
+        <img src="basket_for_toys.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+        <h1 class="catalog-item__title">Большая корзинка для игрушек</h1>
+        <p class="catalog-item__description">
+          Диаметр 30 см, высота  30 см
+        </p>
+        <div class="catalog-item__price">
+          1500 руб.
+        </div>
+        <a class="catalog-item__btn" href="#">В корзину</a>
+      </article>
+    </section>
+    <section class="promo">
+      <img src="promo__icon" alt="Камера">
+      <h2 class="promo__title">Процесс производства</h2>
+      <video class="promo__video" src="videofile.ogg" width="260" height="150" poster="posterimage.jpg">
+        <source src="#">
+      </video>
+      <p class="promo__description">
+        По просьбам наших
+        любимых фолловеров мы
+        сняли для вас подробное
+        видео о том, как появляются
+        наши товары.
+      </p>
+      <a class="btn">Сделать заказ</a>
+    </section>
+    <footer class="page-footer">
+      <section class="social-links">
+        <a class="social-link  social-link--inst" href="#">Instagram</a>
+        <a class="social-link  social-link--fsb" href="#">Facebook</a>
+        <a class="social-link  social-link--twtr" href="#">Twitter</a>
+      </section>
+      <div class="page-footer__copyright">
+        Разработано
+        <img src="img/cocyright.svg" width="27" height="34" alt="HTMLAcademy">
+      </div>
+    </footer>
+    <section class="modal-content modal-content--closed">
+      <h1>Добавить в корзину</h1>
+      <span>Выберите размер</span>
+      <form class="modal-content__size" action="index.html" method="post">
+        <label>
+          <input type="radio" name="size" value="s">
+          S
+        </label>
+        <label>
+          <input type="radio" name="size" value="m">
+          M
+        </label>
+        <label>
+          <input type="radio" name="size" value="l">
+          L
+        </label>
+        <a class="modal-content__btn" href="#">Добавить</a>
+      </form>
+    </section>
+  </body>
+</html>
