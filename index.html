@@ -8,7 +8,6 @@
     <header class="page-header">
       <nav class="page-nav  page-nav--closed">
         <a class="page-nav__logo">
-          <h1 class="visual-hidden">Мишка</h1>
           <img src="img/logo.svg" width="86" height="35" alt="Мишка">
         </a>
         <button class="page-nav__toogle" type="button"></button>
@@ -21,9 +20,10 @@
       </nav>
     </header>
     <div class="page-title  page-title--index">
-      <h2>Милые штуки ручной работы дома</h2>
+      <h1>Милые штуки ручной работы дома</h1>
     </div>
     <section class="product-categories">
+      <h3 class="visual-hidden">Категории товаров</h3>
       <ul class="product-categories__list">
         <li class="product-categories__item"><a href="#">Предметы итерьера</a></li>
         <li class="product-categories__item"><a href="#">Детские игрушки</a></li>
@@ -37,32 +37,32 @@
         работа. Доступны в шести расцветках,
         и трех размерах.
       </p>
-      <div class="product-week__parameters-table">
-        <div class="product-week__row">
-          <div class="product-week__column  product-week__column--size">
+      <table class="parameters-table">
+        <tr>
+          <td class="parameters-table__column-1">
             Цвет:
-          </div>
-          <div class="product-week__column">
+          </td>
+          <td class="parameters-table__column-2">
             &laquo;Тиффани&raquo;/серый
-          </div>
-        </div>
-        <div class="product-week__row">
-          <div class="product-week__column  product-week__column--size">
-            Диаметр:
-          </div>
-          <div class="product-week__column">
+          </td>
+        </tr>
+        <tr>
+          <td class="parameters-table__column-1">
+              Диаметр:
+          </td>
+          <td class="parameters-table__column-2">
             25см
-          </div>
-        </div>
-        <div class="product-week__row">
-          <div class="product-week__column  product-week__column--size">
+          </td>
+        </tr>
+        <tr>
+          <td class="parameters-table__column-1">
             Высота:
-          </div>
-          <div class="product-week__column">
+          </td>
+          <td class="parameters-table__column-2">
             15см
-          </div>
-        </div>
-      </div>
+          </td>
+        </tr>
+      </table>
       <figure class="product-week__image">
         <img src="img/baskets.jpg" width="260" height="315" alt="Вязаные корзинки" >
       </figure>
@@ -187,8 +187,8 @@
             <input type="radio" name="size" value="l">
             L
           </label>
-          <button class="btn btn--modal-style" type="submit">Добавить</button>
         </fieldset>
+        <button class="btn btn--modal-style" type="submit">Добавить</button>
       </form>
     </section>
   </body>
