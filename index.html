@@ -2,13 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Мишка</title>
   </head>
   <body>
     <header class="page-header">
       <nav class="page-nav  page-nav--closed">
         <a class="page-nav__logo">
-          <img src="img/logo.svg" width="86" height="35" alt="Мишка">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
         </a>
         <button class="page-nav__toogle" type="button"></button>
         <ul class="page-nav__list">
@@ -20,13 +22,13 @@
       </nav>
     </header>
     <div class="page-title  page-title--index">
-      <h1>Милые штуки ручной работы дома</h1>
+      <h1>Милые штуки ручной<br> работы для дома</h1>
     </div>
     <section class="product-categories">
       <h3 class="visual-hidden">Категории товаров</h3>
       <ul class="product-categories__list">
-        <li class="product-categories__item"><a href="#">Предметы итерьера</a></li>
-        <li class="product-categories__item"><a href="#">Детские игрушки</a></li>
+        <li class="product-categories__item product-categories__item--bg-style-1"><a href="#">Предметы итерьера</a></li>
+        <li class="product-categories__item product-categories__item--bg-style-2"><a href="#">Детские игрушки</a></li>
       </ul>
     </section>
     <article class="product-week">
@@ -64,7 +66,7 @@
         </tr>
       </table>
       <figure class="product-week__image">
-        <img src="img/baskets.jpg" width="260" height="315" alt="Вязаные корзинки" >
+        <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" >
       </figure>
       <span class="product-week__price">Цена: 990 руб.</span>
       <a class="product-week__btn btn" href="#">Заказать</a>
@@ -124,24 +126,24 @@
         </blockquote>
       </figure>
       <div class="reviews__btns">
-        <button class="reviews__prew" type="button">Предыдущий комментарий</button>
-        <button class="reviews__next" type="button">Следующий комментарий</button>
+        <button class="reviews__btn reviews__btn--prew" type="button">Предыдущий комментарий</button>
+        <button class="reviews__btn reviews__btn--next" type="button">Следующий комментарий</button>
       </div>
-      <a class="btn--size" href="#">Написать</a>
+      <a class="btn" href="#">Написать</a>
     </section>
     <section class="contacts">
-      <h2 class="contacts-title">Контакты</h2>
+      <h2 class="contacts__title">Контакты</h2>
       <div class="contacts__table">
         <div class="contacts__row">
-          <div class="contacts__column">
+          <div class="contacts__column--column1-width">
             e-mail:
           </div>
           <div class="contacts__column">
-            <a href="#">info@mimimishkashop</a>
+            <a href="mailto:info@mimimishkashop">info@mimimishkashop</a>
           </div>
         </div>
         <div class="contacts__row">
-          <div class="contacts__column">
+          <div class="contacts__column--column1-width">
             адрес:
           </div>
           <div class="contacts__column">
@@ -152,7 +154,7 @@
         </div>
       </div>
       <div class="contacts__map">
-        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177649!2d30.320889251746983!3d59.93879686895887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1473721667580" width="100%" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177649!2d30.320889251746983!3d59.93879686895887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1473721667580" width="100%" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <a class="btn" href="#">Напишите нам</a>
     </section>
@@ -166,29 +168,29 @@
       <div class="page-footer__copyright">
         <a href="#">
           Разработано
-          <img src="img/cocyright.svg" width="27" height="34" alt="HTMLAcademy">
+          <img class="page-footer__copyright-logo" src="img/cocyright.svg" width="27" height="34" alt="HTMLAcademy">
         </a>
       </div>
     </footer>
     <section class="modal-content modal-content--closed">
-      <h2>Добавить в корзину</h2>
+      <h2 class="modal-content__title">Добавить в корзину</h2>
       <form class="modal-content__form" action="index.html" method="post">
         <fieldset>
-          <legend>Выберите размер</legend>
-          <label class="modal-content__form-item">
-            <input type="radio" name="size" value="s">
+          <legend>Выберите размер:</legend>
+          <input type="radio" name="size" value="s" id="s" checked>
+          <label class="modal-content__form-item" for="s">
             S
           </label>
-          <label class="modal-content__form-item">
-            <input type="radio" name="size" value="m">
+          <input type="radio" name="size" value="m" id="m">
+          <label class="modal-content__form-item" for="m">
             M
           </label>
-          <label class="modal-content__form-item">
-            <input type="radio" name="size" value="l">
+          <input type="radio" name="size" value="l" id="l">
+          <label class="modal-content__form-item" for="l" >
             L
           </label>
         </fieldset>
-        <button class="btn btn--modal-style" type="submit">Добавить</button>
+        <button class="modal-content-btn  btn" type="submit">Добавить</button>
       </form>
     </section>
   </body>
