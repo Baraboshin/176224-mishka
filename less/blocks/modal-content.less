@@ -1,68 +1,72 @@
 .modal-content {
+  width: 260px;
   padding-top: 33px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 46px;
+  margin: 0 auto;
   border-top: 1px solid #c7c7c7;
   border-bottom: 1px solid #fdfdfd;
   box-shadow: 0 5px 10px 0 rgba(1, 1, 1, 0.25);
-  &__title{
-    padding-left: 55px;
-    padding-right: 55px;
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+
+  input:checked {
+
+    + .modal-content__form-item {
+      border-color: #63d1bb;
+    }
+
   }
-  &__form {
-    font-size: 0;
-    fieldset{
-      margin: 0;
-      padding-top: 24px;
-      margin-bottom: 31px;
-      border: none;
-    }
-    legend {
-      font-size: 15px;
-      line-height: 30px;
-      text-align: center;
-    }
-    input {
-      display: none;
-    }
-  }
-  &__form-item {
-    display: inline-block;
-    width: 78px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    margin-right: 7px;
-    vertical-align: middle;
-    border: 2px solid #ececec;
-    font-size: 17px;
-    line-height: 16px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
-  &-btn {
-    width: 100%;
+
+}
+
+.modal-content__title {
+  padding-left: 55px;
+  padding-right: 55px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-content__form {
+  text-align: center;
+  font-size: 0;
+
+  fieldset{
+    margin: 0;
+    padding-top: 24px;
+    margin-bottom: 31px;
     border: none;
-    color: #ffffff;
-    background-color: #63d1bb;
-    &:hover{
-      background-color: #59d5bc;
-    }
-    &:active{
-      color: #97e2d2;
-      background-color: #46c1ae;
-    }
   }
-  input:checked + .modal-content__form-item {
-    border-color: #63d1bb;
+
+  input {
+    display: none;
+  }
+
+}
+
+.modal-content__info {
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal-content__form-item {
+  display: inline-block;
+  width: 78px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-right: 7px;
+  vertical-align: middle;
+  border: 2px solid #ececec;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0;
   }
 }
